@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+       -webkit-font-smoothing: antialiased;
+   }
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Уведомления - CarAlarm</title>
+</head>
+<body>
+  <div class="frame-notifications">
+    <div class="main-content">
+      <div class="notifications-header">
+        <h1>🔔 Напоминания и уведомления</h1>
+      </div>
+      
+      <!-- Активные уведомления -->
+      <div class="active-notifications">
+        <h2 class="section-title">📋 Активные напоминания</h2>
+        <div class="notifications-list">
+          <div class="notification-card urgent">
+            <div class="notification-date">15 дней</div>
+            <div class="notification-info">
+              <h3>🔧 Техническое обслуживание</h3>
+              <p>Плановое ТО через 15 дней или 2000 км</p>
+              <div class="notification-details">
+                <span class="service-type">Полное ТО</span>
+                <span class="notification-status">Запланировано</span>
+              </div>
+            </div>
+            <button class="notification-action">Перенести</button>
+          </div>
+          
+          <div class="notification-card medium">
+            <div class="notification-date">1 месяц</div>
+            <div class="notification-info">
+              <h3>🚗 Замена тормозных колодок</h3>
+              <p>Рекомендована замена через месяц</p>
+              <div class="notification-details">
+                <span class="service-type">Тормозная система</span>
+                <span class="notification-status">Уведомление</span>
+              </div>
+            </div>
+            <button class="notification-action">Выполнено</button>
+          </div>
+          
+          <div class="notification-card low">
+            <div class="notification-date">3 месяца</div>
+            <div class="notification-info">
+              <h3>🛢️ Замена масла</h3>
+              <p>Следующая замена масла через 3 месяца</p>
+              <div class="notification-details">
+                <span class="service-type">Двигатель</span>
+                <span class="notification-status">Планируется</span>
+              </div>
+            </div>
+            <button class="notification-action">Изменить</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Добавить новое напоминание -->
+      <div class="add-notification-section">
+        <h2 class="section-title">➕ Добавить напоминание</h2>
+        <div class="add-notification-form">
+          <div class="form-row">
+            <select id="serviceType" class="form-select">
+              <option value="">Выберите тип обслуживания</option>
+              <option value="to">Техническое обслуживание</option>
+              <option value="oil">Замена масла</option>
+              <option value="brakes">Замена тормозных колодок</option>
+              <option value="tires">Замена шин</option>
+              <option value="battery">Замена аккумулятора</option>
+              <option value="filters">Замена фильтров</option>
+              <option value="coolant">Замена охлаждающей жидкости</option>
+              <option value="custom">Другое</option>
+            </select>
+            <input type="text" id="customService" class="form-input" placeholder="Укажите тип работ" style="display: none;">
+          </div>
+          
+          <div class="form-row">
+            <input type="date" id="reminderDate" class="form-input">
+            <input type="number" id="reminderKm" class="form-input" placeholder="Пробег (км)">
+          </div>
+          
+          <div class="form-row">
+            <select id="priorityLevel" class="form-select">
+              <option value="low">Низкий приоритет</option>
+              <option value="medium">Средний приоритет</option>
+              <option value="high">Высокий приоритет</option>
+            </select>
+            <button id="addReminderBtn" class="add-btn">Добавить</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- История -->
+      <div class="history-section">
+        <h2 class="section-title">📝 История обслуживания</h2>
+        <div class="history-list">
+          <div class="history-item">
+            <div class="history-date">12.11.2024</div>
+            <div class="history-info">
+              <h4>Техническое обслуживание</h4>
+              <p>Полное ТО, замена фильтров</p>
+            </div>
+            <div class="history-status completed">Выполнено</div>
+          </div>
+          
+          <div class="history-item">
+            <div class="history-date">15.09.2024</div>
+            <div class="history-info">
+              <h4>Замена масла</h4>
+              <p>Моторное масло 5W-30</p>
+            </div>
+            <div class="history-status completed">Выполнено</div>
+          </div>
+          
+          <div class="history-item">
+            <div class="history-date">03.08.2024</div>
+            <div class="history-info">
+              <h4>Замена тормозных колодок</h4>
+              <p>Передние колодки</p>
+            </div>
+            <div class="history-status completed">Выполнено</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Навигация -->
+    <div class="frame-14">
+      <a href="../autohtml-project1/index.html"><img class="simplification" src="../autohtml-project1/simplification0.svg" /></a>
+      <a href="../autohtml-project2/index.html"><img class="simplification2" src="../autohtml-project2/simplification1.svg" /></a>
+      <a href="../autohtml-project3/index.html"><img class="simplification3" src="../autohtml-project3/simplification2.svg" /></a>
+      <a href="../autohtml-project4/index.html"><img class="simplification4" src="../autohtml-project4/simplification3.svg" /></a>
+      <a href="../autohtml-project5/index.html"><img class="simplification5" src="../autohtml-project5/simplification4.svg" /></a>
+      <a href="../autohtml-project8/index.html"><div class="simplification6">🔧</div></a>
+      <a href="../autohtml-project9/index.html"><div class="simplification7">🔔</div></a>
+    </div>
+    
+    <!-- Обновленный заголовок -->
+    <div class="header">
+      <div class="car-alarm-title">
+        CarAlarm
+      </div>
+      <div class="logo-a"></div>
+      <div class="right-header">
+        <a href="../autohtml-project1/index.html"><div class="sale-auto" id="userInfo">Панель управления</div></a>
+        <div class="line"></div>
+        <a href="../autohtml-project6/index.html"><div class="header-registration">Регистрация</div></a>
+        <a href="../autohtml-project7/index.html"><div class="header-enter">Войти</div></a>
+      </div>
+      <img class="icon-car" src="../autohtml-project7/car-alarm-logo.svg" />
+    </div>
+  </div>
+  
+  <script>
+    const userId = localStorage.getItem('userId');
+    if (!userId) {
+      window.location.href = '/autohtml-project7/index.html';
+    }
+  </script>
+  <script src="../js/notifications.js"></script>
+  <script src="../js/auth-header.js"></script>
+</body>
+</html> 

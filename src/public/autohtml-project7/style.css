@@ -1,0 +1,279 @@
+.frame-13,
+.frame-13 * {
+  box-sizing: border-box;
+}
+.frame-13 {
+  background: #212830;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+.div {
+  flex-shrink: 0;
+  width: 552px;
+  height: 726px;
+  position: relative;
+}
+.image-26 {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 211px;
+  top: 111px;
+  object-fit: cover;
+}
+.frame-17 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 510px;
+  position: absolute;
+  left: 21px;
+  top: 283px;
+}
+.frame-15 {
+  background: #638b88;
+  border-radius: 40px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+  color: #475e5c;
+  text-align: left;
+  font-family: "InriaSans-Regular", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  padding: 22px;
+}
+.imei {
+  color: #475e5c;
+  text-align: left;
+  font-family: "InriaSans-Regular", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  position: absolute;
+  left: 22px;
+  top: 7px;
+}
+.frame-16 {
+  background: #638b88;
+  border-radius: 40px;
+  flex-shrink: 0;
+  width: 510px;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+}
+.div2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "InriaSans-Regular", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  position: absolute;
+  left: 22px;
+  top: 7px;
+}
+.vector {
+  width: 3.48%;
+  height: 56.82%;
+  position: absolute;
+  right: 4.13%;
+  left: 92.39%;
+  bottom: 20.45%;
+  top: 22.73%;
+  overflow: visible;
+}
+.frame-18 {
+  background: #638b88;
+  border-radius: 40px;
+  flex-shrink: 0;
+  width: 510px;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+}
+.div3 {
+  color: #475e5c;
+  text-align: left;
+  font-family: "InriaSans-Regular", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  position: absolute;
+  left: 22px;
+  top: 7px;
+}
+.frame-182 {
+  background: #80e3dd;
+  border-radius: 40px;
+  padding: 6px 123px 6px 123px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 40px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+}
+.div4 {
+  color: #212e2d;
+  text-align: left;
+  font-family: "InriaSans-Regular", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  position: relative;
+}
+.header {
+  background: #ffffff;
+  flex-shrink: 0;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  right: 0%;
+  left: 0%;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.car-alarm-title {
+  color: #000000;
+  text-align: left;
+  font-family: "JsMathCmmi10-Cmmi10", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 92px;
+  top: 4px;
+}
+.logo-a {
+  background: #3c879c;
+  width: 12px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.right-header {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: -0.2px;
+  top: 0px;
+  overflow: hidden;
+}
+.sale-auto {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  width: 220px;
+}
+.line {
+  background: #3c879c;
+  flex-shrink: 0;
+  width: 9.04px;
+  height: 60px;
+  position: relative;
+}
+.header-registration {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  width: 150.1px;
+  height: 20px;
+}
+.header-enter {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  width: 150.1px;
+  height: 20px;
+}
+.icon-car {
+  height: auto;
+  position: absolute;
+  left: 31px;
+  top: 11px;
+  overflow: visible;
+}
+
+.frame-14 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 552px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+}
+
+.simplification, .simplification2, .simplification3, .simplification4, .simplification5 {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+
+.simplification6, .simplification7 {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.simplification6:hover, .simplification7:hover {
+  transform: scale(1.2);
+}
+
+body {
+  padding-bottom: 120px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}

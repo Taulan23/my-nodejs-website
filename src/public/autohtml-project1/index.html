@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+       -webkit-font-smoothing: antialiased;
+   }
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="frame-7">
+    <div class="div">
+      <img class="div2" src="div1.png" />
+      <img class="image" id="toggleImage1" src="image3.png" />
+      <img class="image2" id="toggleImage2" src="image3.png" />
+      <img class="image3" id="toggleImage3" src="image3.png" />
+      <img class="image4" id="toggleImage4" src="image3.png" />
+      <img class="key" id="key" src="key0.svg" />
+      <div class="alarm-icon" id="alarmIcon">🔇</div>
+    </div>
+    <div class="frame-14">
+      <a href="../autohtml-project1/index.html"><img class="simplification" src="simplification0.svg" /></a>
+      <a href="../autohtml-project2/index.html"><img class="simplification2" src="simplification1.svg" /></a>
+      <a href="../autohtml-project3/index.html"><img class="simplification3" src="simplification2.svg" /></a>
+      <a href="../autohtml-project4/index.html"><img class="simplification4" src="simplification3.svg" /></a>
+      <a href="../autohtml-project5/index.html"><img class="simplification5" src="simplification4.svg" /></a>
+      <a href="../autohtml-project8/index.html"><div class="simplification6">🔧</div></a>
+      <a href="../autohtml-project9/index.html"><div class="simplification7">🔔</div></a>
+    </div>
+    <div class="header">
+      <div class="car-alarm-title">
+        CarAlarm
+      </div>
+      <div class="logo-a"></div>
+      <div class="right-header">
+        <a href="../autohtml-project1/index.html"><div class="sale-auto" id="userInfo">Панель управления</div></a>
+        <div class="line"></div>
+        <a href="../autohtml-project6/index.html"><div class="header-registration">Регистрация</div></a>
+        <a href="../autohtml-project7/index.html"><div class="header-enter">Войти</div></a>
+      </div>
+      <img class="icon-car" src="../autohtml-project7/car-alarm-logo.svg" />
+    </div>
+  </div>
+  <script>
+    const userId = localStorage.getItem('userId');
+    if (!userId) {
+      window.location.href = '/autohtml-project7/index.html'; // Перенаправление на страницу входа, если пользователь не авторизован
+    }
+  </script>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

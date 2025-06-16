@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="frame-11">
+    <div class="div">
+      <img class="image-18" src="image-180.png" />
+      <img class="image" src="image0.png" />
+      <div class="mercedes-amg-c-63"></div>
+      <div class="frame-19">
+        <img class="image-20" src="image-200.png" />
+        <img class="image-21" src="image-210.png" />
+      </div>
+      <div class="frame-17">
+        <div class="frame-15">
+          <div class="div2">Паспорт ТС</div>
+          <img class="vector" src="vector0.svg" />
+        </div>
+        <div class="frame-16">
+          <div class="div2">Пробег автомобиля</div>
+          <img class="vector2" src="vector1.svg" />
+        </div>
+        <div class="frame-172">
+          <div class="div2">ОСАГО</div>
+          <img class="vector3" src="vector2.svg" />
+        </div>
+        <div class="frame-18">
+          <div class="div2">ТО автомобиля (даты)</div>
+          <img class="vector4" src="vector3.svg" />
+        </div>
+        <div class="frame-emergency">
+          <div class="div2">Экстренная библиотека</div>
+          <img class="vector6" src="vector5.svg" />
+        </div>
+        <div class="emergency-content" style="display: none;">
+          <div class="emergency-download">
+            <button class="download-btn">
+              <span>📥 Загрузить пакет инструкций для экстренных происшествий на устройство</span>
+              <div class="download-icon">⬇️</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="frame-152">
+        <div class="div2">Водительское удостоверение</div>
+        <img class="vector5" src="vector4.svg" />
+      </div>
+    </div>
+    <div class="frame-14">
+      <a href="../autohtml-project1/index.html"><img class="simplification" src="simplification0.svg" /></a>
+      <a href="../autohtml-project2/index.html"><img class="simplification2" src="simplification1.svg" /></a>
+      <a href="../autohtml-project3/index.html"><img class="simplification3" src="simplification2.svg" /></a>
+      <a href="../autohtml-project4/index.html"><img class="simplification4" src="simplification3.svg" /></a>
+      <a href="../autohtml-project5/index.html"><img class="simplification5" src="simplification4.svg" /></a>
+      <a href="../autohtml-project8/index.html"><div class="simplification6">🔧</div></a>
+      <a href="../autohtml-project9/index.html"><div class="simplification7">🔔</div></a>
+    </div>
+    <div class="header">
+      <div class="car-alarm-title">
+        CarAlarm
+      </div>
+      <div class="logo-a"></div>
+      <div class="right-header">
+        <a href="../autohtml-project1/index.html"><div class="sale-auto" id="userInfo">Панель управления</div></a>
+        <div class="line"></div>
+        <a href="../autohtml-project6/index.html"><div class="header-registration">Регистрация</div></a>
+        <a href="../autohtml-project7/index.html"><div class="header-enter">Войти</div></a>
+      </div>
+      <img class="icon-car" src="../autohtml-project7/car-alarm-logo.svg" />
+    </div>
+  </div>
+  <script>
+    const userId = localStorage.getItem('userId');
+    if (!userId) {
+      window.location.href = '/autohtml-project7/index.html'; // Перенаправление на страницу входа, если пользователь не авторизован
+    }
+  </script>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

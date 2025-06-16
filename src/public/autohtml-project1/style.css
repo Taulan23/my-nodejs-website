@@ -1,0 +1,306 @@
+.frame-7,
+.frame-7 * {
+  box-sizing: border-box;
+}
+.frame-7 {
+  background: #212830;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.div {
+  flex-shrink: 0;
+  width: 552px;
+  height: 726px;
+  position: relative;
+}
+.div2 {
+  width: 255px;
+  height: 561px;
+  position: absolute;
+  left: 148px;
+  top: 109px;
+  object-fit: cover;
+}
+.image {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 246px;
+  top: 34px;
+  object-fit: cover;
+}
+.image2 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 246px;
+  top: 627px;
+  object-fit: cover;
+}
+.image3 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 391px;
+  top: 329px;
+  object-fit: cover;
+}
+.image4 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 100px;
+  top: 329px;
+  object-fit: cover;
+}
+.key {
+  width: 78.37px;
+  height: 10.69%;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 39.86%;
+  top: 49.45%;
+  overflow: visible;
+}
+.frame-14 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 552px;
+  position: relative;
+}
+.simplification {
+  flex-shrink: 0;
+  width: 78px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.simplification2 {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.simplification3 {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.simplification4 {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.simplification5 {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+
+.simplification6, .simplification7 {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.simplification6:hover, .simplification7:hover {
+  transform: scale(1.2);
+}
+.header {
+  background: #ffffff;
+  flex-shrink: 0;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  top: 0px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.elite-drive-autos {
+  color: #000000;
+  text-align: left;
+  font-family: "JsMathCmmi10-Cmmi10", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 92px;
+  top: 4px;
+}
+.logo-a {
+  background: #3c879c;
+  width: 12px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.right-header {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: -0.2px;
+  top: 0px;
+  overflow: hidden;
+}
+.sale-auto {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  width: 220px;
+}
+.line {
+  background: #3c879c;
+  flex-shrink: 0;
+  width: 9.04px;
+  height: 60px;
+  position: relative;
+}
+.header-registration {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  width: 150.1px;
+  height: 20px;
+}
+.header-enter {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  width: 150.1px;
+  height: 20px;
+}
+.icon-car {
+  height: auto;
+  position: absolute;
+  left: 31px;
+  top: 11px;
+  overflow: visible;
+}
+
+.alarm-icon {
+  position: absolute;
+  left: 50%;
+  top: 180px;
+  transform: translateX(-50%);
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  z-index: 10;
+  color: white;
+}
+
+.alarm-icon:hover {
+  transform: translateX(-50%) scale(1.15);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+.alarm-icon.active {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  animation: pulse-alarm 2s infinite;
+}
+
+@keyframes pulse-alarm {
+  0% {
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  }
+  50% {
+    box-shadow: 0 6px 25px rgba(220, 38, 38, 0.8);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  }
+}
+
+.car-alarm-title {
+  color: #1f2937;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: absolute;
+  left: 92px;
+  top: 15px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-a {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  width: 12px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.simplification6, .simplification7 {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: visible;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.simplification6:hover, .simplification7:hover {
+  transform: scale(1.1);
+  background: rgba(102, 126, 234, 0.1);
+}

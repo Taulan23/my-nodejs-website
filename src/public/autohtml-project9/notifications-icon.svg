@@ -1,0 +1,19 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="45" fill="#667eea" opacity="0.1"/>
+  <circle cx="50" cy="50" r="35" fill="#667eea" opacity="0.2"/>
+  
+  <!-- Колокольчик -->
+  <g transform="translate(25, 20)">
+    <path d="M25 10C30 10 35 15 35 20V35C35 40 40 45 45 50H5C10 45 15 40 15 35V20C15 15 20 10 25 10Z" fill="#667eea"/>
+    <path d="M20 50C20 55 22.5 60 25 60S30 55 30 50" fill="#764ba2"/>
+    <circle cx="25" cy="8" r="3" fill="#764ba2"/>
+  </g>
+  
+  <!-- Индикатор уведомления -->
+  <circle cx="70" cy="30" r="8" fill="#dc2626"/>
+  <text x="70" y="35" text-anchor="middle" fill="white" font-size="10" font-weight="bold">3</text>
+  
+  <!-- Точки активности -->
+  <circle cx="25" cy="75" r="2" fill="#059669"/>
+  <circle cx="75" cy="75" r="2" fill="#f59e0b"/>
+</svg> 

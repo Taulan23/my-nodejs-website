@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+       -webkit-font-smoothing: antialiased;
+   }
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Диагностика - CarAlarm</title>
+</head>
+<body>
+  <div class="frame-diagnostics">
+    <div class="main-content">
+      <img class="car-image" src="../autohtml-project1/div1.png" />
+      
+      <div class="diagnostics-header">
+        <h1>🔧 Диагностика автомобиля</h1>
+      </div>
+      
+      <!-- Экстренные уведомления -->
+      <div class="emergency-section">
+        <h2 class="section-title emergency-title">⚠️ Экстренные уведомления</h2>
+        <div class="notifications-grid">
+          <div class="notification-item emergency" id="engine-check">
+            <div class="notification-icon">🚨</div>
+            <div class="notification-text">
+              <span class="notification-title">Проверьте двигатель</span>
+              <span class="notification-status">Требует внимания</span>
+            </div>
+            <div class="notification-indicator emergency-indicator"></div>
+          </div>
+          
+          <div class="notification-item emergency" id="headlight-warning">
+            <div class="notification-icon">💡</div>
+            <div class="notification-text">
+              <span class="notification-title">Неисправность фар</span>
+              <span class="notification-status">Левая фара</span>
+            </div>
+            <div class="notification-indicator emergency-indicator"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Неэкстренные уведомления -->
+      <div class="regular-section">
+        <h2 class="section-title regular-title">ℹ️ Информационные уведомления</h2>
+        <div class="notifications-grid">
+          <div class="notification-item regular" id="oil-level">
+            <div class="notification-icon">🛢️</div>
+            <div class="notification-text">
+              <span class="notification-title">Уровень масла</span>
+              <span class="notification-status">Средний</span>
+            </div>
+            <div class="notification-indicator regular-indicator"></div>
+          </div>
+          
+          <div class="notification-item regular" id="washer-fluid">
+            <div class="notification-icon">🧽</div>
+            <div class="notification-text">
+              <span class="notification-title">Омывающая жидкость</span>
+              <span class="notification-status">Низкий уровень</span>
+            </div>
+            <div class="notification-indicator regular-indicator"></div>
+          </div>
+          
+          <div class="notification-item regular" id="battery-status">
+            <div class="notification-icon">🔋</div>
+            <div class="notification-text">
+              <span class="notification-title">Состояние аккумулятора</span>
+              <span class="notification-status">Хорошее</span>
+            </div>
+            <div class="notification-indicator regular-indicator"></div>
+          </div>
+          
+          <div class="notification-item regular" id="tire-pressure">
+            <div class="notification-icon">🚗</div>
+            <div class="notification-text">
+              <span class="notification-title">Давление в шинах</span>
+              <span class="notification-status">Норма</span>
+            </div>
+            <div class="notification-indicator regular-indicator"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Навигация -->
+    <div class="frame-14">
+      <a href="../autohtml-project1/index.html"><img class="simplification" src="../autohtml-project1/simplification0.svg" /></a>
+      <a href="../autohtml-project2/index.html"><img class="simplification2" src="../autohtml-project2/simplification1.svg" /></a>
+      <a href="../autohtml-project3/index.html"><img class="simplification3" src="../autohtml-project3/simplification2.svg" /></a>
+      <a href="../autohtml-project4/index.html"><img class="simplification4" src="../autohtml-project4/simplification3.svg" /></a>
+      <a href="../autohtml-project5/index.html"><img class="simplification5" src="../autohtml-project5/simplification4.svg" /></a>
+      <a href="../autohtml-project8/index.html"><div class="simplification6">🔧</div></a>
+      <a href="../autohtml-project9/index.html"><div class="simplification7">🔔</div></a>
+    </div>
+    
+    <!-- Обновленный заголовок -->
+    <div class="header">
+      <div class="car-alarm-title">
+        CarAlarm
+      </div>
+      <div class="logo-a"></div>
+      <div class="right-header">
+        <a href="../autohtml-project1/index.html"><div class="sale-auto" id="userInfo">Панель управления</div></a>
+        <div class="line"></div>
+        <a href="../autohtml-project6/index.html"><div class="header-registration">Регистрация</div></a>
+        <a href="../autohtml-project7/index.html"><div class="header-enter">Войти</div></a>
+      </div>
+      <img class="icon-car" src="../autohtml-project7/car-alarm-logo.svg" />
+    </div>
+  </div>
+  
+  <script>
+    const userId = localStorage.getItem('userId');
+    if (!userId) {
+      window.location.href = '/autohtml-project7/index.html';
+    }
+  </script>
+  <script src="../js/diagnostics.js"></script>
+  <script src="../js/auth-header.js"></script>
+</body>
+</html> 
