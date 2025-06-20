@@ -178,10 +178,7 @@ html {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 10px 20px;
-  backdrop-filter: blur(10px);
+  background: none !important;
 }
 
 .simplification, .simplification2, .simplification3, .simplification4, .simplification5 {
@@ -190,6 +187,12 @@ html {
   height: 100px;
   position: relative;
   overflow: visible;
+  filter: brightness(0) invert(1) !important;
+  transition: all 0.3s ease;
+}
+
+.simplification {
+  width: 78px;
 }
 
 .simplification6, .simplification7 {
@@ -198,17 +201,39 @@ html {
   height: 80px;
   position: relative;
   overflow: visible;
+  transition: all 0.3s ease;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 45px;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: transparent;
 }
 
 .simplification6:hover, .simplification7:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+}
+
+/* Активное состояние для страницы диагностики - только иконка диагностики активна */
+body.page-diagnostics .frame-14 .simplification6 {
+  color: #81E6DF;
+  border-color: #81E6DF;
+  background: rgba(129, 230, 223, 0.15);
+}
+
+/* Все остальные иконки остаются белыми */
+body.page-diagnostics .frame-14 .simplification,
+body.page-diagnostics .frame-14 .simplification2,
+body.page-diagnostics .frame-14 .simplification3,
+body.page-diagnostics .frame-14 .simplification4,
+body.page-diagnostics .frame-14 .simplification5,
+body.page-diagnostics .frame-14 .simplification7 {
+  filter: brightness(0) invert(1) !important;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .header {

@@ -183,8 +183,6 @@ html {
   background: rgba(255, 255, 255, 0.05);
   padding: 25px;
   border-radius: 20px;
-  border: 1px solid rgba(128, 227, 221, 0.2);
-  backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
@@ -197,19 +195,16 @@ html {
 .form-select, .form-input {
   flex: 1;
   padding: 12px 16px;
-  border: 2px solid rgba(128, 227, 221, 0.3);
   border-radius: 12px;
   font-size: 14px;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   font-family: "InriaSans-Regular", sans-serif;
-  backdrop-filter: blur(10px);
 }
 
 .form-select:focus, .form-input:focus {
   outline: none;
-  border-color: #80e3dd;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 0 3px rgba(128, 227, 221, 0.1);
   transform: translateY(-1px);
@@ -336,18 +331,22 @@ html {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 10px 20px;
-  backdrop-filter: blur(10px);
+  background: none !important;
 }
 
+/* Базовые стили для всех иконок навигации - белый цвет по умолчанию */
 .simplification, .simplification2, .simplification3, .simplification4, .simplification5 {
   flex-shrink: 0;
   width: 100px;
   height: 100px;
   position: relative;
   overflow: visible;
+  filter: brightness(0) invert(1) !important;
+  transition: all 0.3s ease;
+}
+
+.simplification {
+  width: 78px;
 }
 
 .simplification6, .simplification7 {
@@ -356,17 +355,39 @@ html {
   height: 80px;
   position: relative;
   overflow: visible;
+  transition: all 0.3s ease;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 45px;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: transparent;
 }
 
 .simplification6:hover, .simplification7:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+}
+
+/* Активное состояние для страницы уведомлений - только иконка уведомлений активна */
+body.page-notifications .frame-14 .simplification7 {
+  color: #81E6DF;
+  border-color: #81E6DF;
+  background: rgba(129, 230, 223, 0.15);
+}
+
+/* Все остальные иконки остаются белыми */
+body.page-notifications .frame-14 .simplification,
+body.page-notifications .frame-14 .simplification2,
+body.page-notifications .frame-14 .simplification3,
+body.page-notifications .frame-14 .simplification4,
+body.page-notifications .frame-14 .simplification5,
+body.page-notifications .frame-14 .simplification6 {
+  filter: brightness(0) invert(1) !important;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .header {

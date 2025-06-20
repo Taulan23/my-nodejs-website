@@ -9,9 +9,10 @@
   gap: 0px;
   align-items: center;
   justify-content: center;
-  height: 1024px;
+  min-height: 1024px;
+  height: auto;
   position: relative;
-  overflow: hidden;
+  padding-bottom: 140px;
 }
 .div {
   flex-shrink: 0;
@@ -196,61 +197,69 @@
   justify-content: space-between;
   flex-shrink: 0;
   width: 552px;
-  position: relative;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(33, 40, 48, 0.9);
+  padding: 15px 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
-.simplification {
+.simplification,
+.simplification2,
+.simplification3,
+.simplification4,
+.simplification5 {
   flex-shrink: 0;
   width: 78px;
   height: 100px;
   position: relative;
   overflow: visible;
+  filter: brightness(0) invert(1) !important;
+  transition: all 0.3s ease;
 }
-.simplification2 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
-.simplification3 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
-.simplification4 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
+.simplification2,
+.simplification3,
+.simplification4,
 .simplification5 {
-  flex-shrink: 0;
   width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
 }
-
 .simplification6, .simplification7 {
   flex-shrink: 0;
   width: 80px;
   height: 80px;
   position: relative;
   overflow: visible;
+  transition: all 0.3s ease;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 45px;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: transparent;
 }
-
 .simplification6:hover, .simplification7:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+}
+/* Активное состояние для пятой страницы - только пятая иконка активна */
+body.page-5 .frame-14 .simplification5 {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(15%) saturate(650%) hue-rotate(140deg) brightness(99%) contrast(92%) !important;
+}
+/* Остальные иконки остаются белыми на пятой странице */
+body.page-5 .frame-14 .simplification,
+body.page-5 .frame-14 .simplification2,
+body.page-5 .frame-14 .simplification3,
+body.page-5 .frame-14 .simplification4,
+body.page-5 .frame-14 .simplification6,
+body.page-5 .frame-14 .simplification7 {
+  filter: brightness(0) invert(1) !important;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 .header {
   background: #ffffff;
@@ -336,4 +345,127 @@
   top: 11px;
   overflow: visible;
 }
+
+/* Экстренная библиотека */
+.frame-emergency {
+  background: #638b88;
+  border-radius: 40px;
+  flex-shrink: 0;
+  width: 510px;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.vector6 {
+  width: 3.48%;
+  height: 56.82%;
+  position: absolute;
+  right: 4.13%;
+  left: 92.39%;
+  bottom: 20.45%;
+  top: 22.73%;
+  overflow: visible;
+}
+.emergency-content {
+  width: 510px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(128, 227, 221, 0.1);
+  border-radius: 20px;
+  border: 2px solid #80e3dd;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.emergency-download {
+  margin-bottom: 20px;
+}
+.download-btn {
+  width: 100%;
+  padding: 15px;
+  background: #638b88;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.download-btn:hover {
+  background: #527570;
+  transform: translateY(-2px);
+}
+.download-icon {
+  font-size: 20px;
+}
+.emergency-image {
+  text-align: center;
+  margin-top: 15px;
+}
+.emergency-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.emergency-instructions {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.emergency-instructions h3 {
+  color: #81E6DF;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.instruction-item {
+  background: rgba(99, 139, 136, 0.3);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #81E6DF;
+}
+
+.instruction-item h4 {
+  color: #81E6DF;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.instruction-item p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Стили для скроллбара */
+.emergency-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.emergency-content::-webkit-scrollbar-track {
+  background: rgba(128, 227, 221, 0.1);
+  border-radius: 4px;
+}
+
+.emergency-content::-webkit-scrollbar-thumb {
+  background: #81E6DF;
+  border-radius: 4px;
+}
+
+.emergency-content::-webkit-scrollbar-thumb:hover {
+  background: #6dd4cd;
+}
+
+
 

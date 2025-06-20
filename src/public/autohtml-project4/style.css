@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 .frame-10,
 .frame-10 * {
   box-sizing: border-box;
@@ -41,12 +43,12 @@
   border-color: #80e3dd;
   border-width: 6px;
   padding: 13px 29px 13px 29px;
-  width: 189px;
+  width: 220px;
   height: 302px;
   position: absolute;
-  left: 53px;
+  left: 38px;
   top: 45px;
-  overflow: hidden;
+  overflow: visible;
 }
 .div3 {
   color: #ffffff;
@@ -71,13 +73,14 @@
 ._1-9 {
   color: #ffffff;
   text-align: center;
-  font-family: "InriaSans-Regular", sans-serif;
-  font-size: 40px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 36px;
   font-weight: 400;
   position: absolute;
-  left: 29px;
-  top: 241px;
-  width: 131px;
+  left: 20px;
+  top: 235px;
+  width: 170px;
+  z-index: 10;
 }
 .frame-5 {
   background: rgba(128, 227, 221, 0.15);
@@ -86,12 +89,12 @@
   border-color: #80e3dd;
   border-width: 6px;
   padding: 13px 28px 13px 28px;
-  width: 189px;
+  width: 220px;
   height: 302px;
   position: absolute;
-  left: 53px;
+  left: 38px;
   top: 389px;
-  overflow: hidden;
+  overflow: visible;
 }
 .div4 {
   color: #ffffff;
@@ -116,13 +119,14 @@
 ._2-3 {
   color: #ffffff;
   text-align: center;
-  font-family: "InriaSans-Regular", sans-serif;
-  font-size: 40px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 36px;
   font-weight: 400;
   position: absolute;
-  left: 28px;
-  top: 241px;
-  width: 133px;
+  left: 20px;
+  top: 235px;
+  width: 170px;
+  z-index: 10;
 }
 .frame-6 {
   background: rgba(254, 46, 84, 0.15);
@@ -131,12 +135,12 @@
   border-color: #fe2e54;
   border-width: 6px;
   padding: 13px;
-  width: 189px;
+  width: 220px;
   height: 302px;
   position: absolute;
-  left: 307px;
+  left: 292px;
   top: 389px;
-  overflow: hidden;
+  overflow: visible;
 }
 .div5 {
   color: #ffffff;
@@ -161,13 +165,14 @@
 ._1-2 {
   color: #ffffff;
   text-align: center;
-  font-family: "InriaSans-Regular", sans-serif;
-  font-size: 40px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 36px;
   font-weight: 400;
   position: absolute;
-  left: 13px;
-  top: 241px;
-  width: 163px;
+  left: 10px;
+  top: 235px;
+  width: 190px;
+  z-index: 10;
 }
 .frame-4 {
   background: rgba(128, 227, 221, 0.15);
@@ -176,12 +181,12 @@
   border-color: #80e3dd;
   border-width: 6px;
   padding: 13px 29px 13px 29px;
-  width: 189px;
+  width: 220px;
   height: 302px;
   position: absolute;
-  left: 307px;
+  left: 292px;
   top: 45px;
-  overflow: hidden;
+  overflow: visible;
 }
 .div-3-span3 {
   color: #ffffff;
@@ -198,13 +203,14 @@
 ._2-1 {
   color: #ffffff;
   text-align: center;
-  font-family: "InriaSans-Regular", sans-serif;
-  font-size: 40px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 36px;
   font-weight: 400;
   position: absolute;
-  left: 29px;
-  top: 241px;
-  width: 131px;
+  left: 20px;
+  top: 235px;
+  width: 170px;
+  z-index: 10;
 }
 .frame-14 {
   display: flex;
@@ -215,40 +221,25 @@
   width: 552px;
   position: relative;
 }
-.simplification {
+.simplification,
+.simplification2,
+.simplification3,
+.simplification4,
+.simplification5 {
   flex-shrink: 0;
   width: 78px;
   height: 100px;
   position: relative;
   overflow: visible;
+  filter: brightness(0) invert(1) !important;
+  transition: all 0.3s ease;
 }
-.simplification2 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
-.simplification3 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
-.simplification4 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
+
+.simplification2,
+.simplification3,
+.simplification4,
 .simplification5 {
-  flex-shrink: 0;
   width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
 }
 
 .simplification6, .simplification7 {
@@ -257,17 +248,59 @@
   height: 80px;
   position: relative;
   overflow: visible;
+  transition: all 0.3s ease;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 45px;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: transparent;
 }
 
 .simplification6:hover, .simplification7:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+}
+
+/* Активное состояние для четвертой страницы - только четвертая иконка активна */
+body.page-4 .frame-14 .simplification4 {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(15%) saturate(650%) hue-rotate(140deg) brightness(99%) contrast(92%) !important;
+}
+
+/* Остальные иконки остаются белыми на четвертой странице */
+body.page-4 .frame-14 .simplification,
+body.page-4 .frame-14 .simplification2,
+body.page-4 .frame-14 .simplification3,
+body.page-4 .frame-14 .simplification5,
+body.page-4 .frame-14 .simplification6,
+body.page-4 .frame-14 .simplification7 {
+  filter: brightness(0) invert(1) !important;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Активное состояние для диагностики на странице 8 */
+.page-diagnostics .simplification6 {
+  background: linear-gradient(135deg, rgba(128, 227, 221, 0.4), rgba(128, 227, 221, 0.6)) !important;
+  box-shadow: 
+    0 0 20px rgba(128, 227, 221, 0.6),
+    0 0 40px rgba(128, 227, 221, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  transform: scale(1.05) !important;
+}
+
+/* Активное состояние для уведомлений на странице 9 */
+.page-notifications .simplification7 {
+  background: linear-gradient(135deg, rgba(128, 227, 221, 0.4), rgba(128, 227, 221, 0.6)) !important;
+  box-shadow: 
+    0 0 20px rgba(128, 227, 221, 0.6),
+    0 0 40px rgba(128, 227, 221, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  transform: scale(1.05) !important;
 }
 .header {
   background: #ffffff;
@@ -353,5 +386,7 @@
   top: 11px;
   overflow: visible;
 }
+
+
 
 

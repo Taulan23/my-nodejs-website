@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css?v=4">
   
   
   <style>
@@ -36,7 +36,7 @@
    </style>
   <title>Document</title>
 </head>
-<body>
+<body class="page-5">
   <div class="frame-11">
     <div class="div">
       <img class="image-18" src="image-180.png" />
@@ -74,6 +74,48 @@
               <div class="download-icon">⬇️</div>
             </button>
           </div>
+          <div class="emergency-image">
+            <img src="image-180.png" alt="Экстренная помощь" class="emergency-img" />
+          </div>
+          <div class="emergency-instructions">
+            <h3>📋 Инструкции для экстренных ситуаций:</h3>
+            <div class="instruction-item">
+              <h4>🚗 При поломке автомобиля:</h4>
+              <p>1. Включите аварийную сигнализацию<br>
+              2. Установите знак аварийной остановки<br>
+              3. Переместитесь в безопасное место<br>
+              4. Вызовите эвакуатор или техпомощь</p>
+            </div>
+            <div class="instruction-item">
+              <h4>🔥 При пожаре в автомобиле:</h4>
+              <p>1. Немедленно остановите автомобиль<br>
+              2. Выключите двигатель<br>
+              3. Покиньте автомобиль<br>
+              4. Вызовите пожарную службу 101</p>
+            </div>
+            <div class="instruction-item">
+              <h4>🩹 При ДТП:</h4>
+              <p>1. Включите аварийную сигнализацию<br>
+              2. Оцените состояние пострадавших<br>
+              3. Вызовите скорую помощь 103<br>
+              4. Вызовите ГИБДД 102<br>
+              5. Сфотографируйте место происшествия</p>
+            </div>
+            <div class="instruction-item">
+              <h4>⚠️ При угрозе безопасности:</h4>
+              <p>1. Заблокируйте двери автомобиля<br>
+              2. Не выходите из автомобиля<br>
+              3. Вызовите полицию 102<br>
+              4. Сообщите о своем местоположении</p>
+            </div>
+            <div class="instruction-item">
+              <h4>🌨️ При плохих погодных условиях:</h4>
+              <p>1. Снизьте скорость движения<br>
+              2. Увеличьте дистанцию<br>
+              3. Включите противотуманные фары<br>
+              4. При необходимости остановитесь</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="frame-152">
@@ -109,6 +151,22 @@
     if (!userId) {
       window.location.href = '/autohtml-project7/index.html'; // Перенаправление на страницу входа, если пользователь не авторизован
     }
+    
+    // Обработчик для показа/скрытия экстренной библиотеки
+    document.addEventListener('DOMContentLoaded', function() {
+      const emergencyFrame = document.querySelector('.frame-emergency');
+      const emergencyContent = document.querySelector('.emergency-content');
+      
+      if (emergencyFrame && emergencyContent) {
+        emergencyFrame.addEventListener('click', function() {
+          if (emergencyContent.style.display === 'none' || emergencyContent.style.display === '') {
+            emergencyContent.style.display = 'block';
+          } else {
+            emergencyContent.style.display = 'none';
+          }
+        });
+      }
+    });
   </script>
   <script src="../js/scripts.js"></script>
 </body>

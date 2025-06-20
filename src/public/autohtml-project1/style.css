@@ -78,40 +78,25 @@
   width: 552px;
   position: relative;
 }
-.simplification {
+.simplification,
+.simplification2,
+.simplification3,
+.simplification4,
+.simplification5 {
   flex-shrink: 0;
   width: 78px;
   height: 100px;
   position: relative;
   overflow: visible;
+  filter: brightness(0) invert(1) !important;
+  transition: all 0.3s ease;
 }
-.simplification2 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
-.simplification3 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
-.simplification4 {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
-}
+
+.simplification2,
+.simplification3,
+.simplification4,
 .simplification5 {
-  flex-shrink: 0;
   width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: visible;
 }
 
 .simplification6, .simplification7 {
@@ -120,18 +105,39 @@
   height: 80px;
   position: relative;
   overflow: visible;
+  transition: all 0.3s ease;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 45px;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: transparent;
 }
 
 .simplification6:hover, .simplification7:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
+
+/* Активное состояние для главной страницы - только первая иконка активна */
+body.page-1 .frame-14 a:first-child .simplification {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(15%) saturate(650%) hue-rotate(140deg) brightness(99%) contrast(92%) !important;
+}
+
+/* Остальные иконки остаются белыми на главной странице */
+body.page-1 .frame-14 .simplification2,
+body.page-1 .frame-14 .simplification3,
+body.page-1 .frame-14 .simplification4,
+body.page-1 .frame-14 .simplification5,
+body.page-1 .frame-14 .simplification6,
+body.page-1 .frame-14 .simplification7 {
+  filter: brightness(0) invert(1) !important;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
 .header {
   background: #ffffff;
   flex-shrink: 0;
@@ -286,21 +292,4 @@
   top: 0px;
 }
 
-.simplification6, .simplification7 {
-  flex-shrink: 0;
-  width: 80px;
-  height: 80px;
-  position: relative;
-  overflow: visible;
-  transition: all 0.3s ease;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 45px;
-}
 
-.simplification6:hover, .simplification7:hover {
-  transform: scale(1.1);
-  background: rgba(102, 126, 234, 0.1);
-}
